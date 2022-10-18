@@ -444,6 +444,43 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal__form form-modal">
+          <label for="form-modal__name" class="form-modal__lable">Ім'я</label>
+          <input
+            type="text"
+            name="form-modal__name"
+            id="form-modal__name"
+            class="form-modal__input"
+          />
+          <label for="form-modal__phone" class="form-modal__lable">Телефон</label>
+          <input
+            type="tel"
+            name="form-modal__phone"
+            id="form-modal__phone"
+            class="form-modal__input"
+          />
+          <label for="form-modal__mail" class="form-modal__lable">Пошта</label>
+          <input
+            type="email"
+            name="form-modal__mail"
+            id="form-modal__mail"
+            class="form-modal__input"
+          />
+          <label for="form-modal__comment" class="form-modal__lable">Пошта</label>
+          <textarea
+            name="form-modal__comment"
+            id="form-modal__comment"
+            class="form-modal__comment form-modal__input"
+            placeholder="Введіть текст"
+          ></textarea>
+          <input type="checkbox" name="form-modal__check" id="form-modal__check" />
+          <label for="form-modal__check" class="form-modal__check-input"
+            >Погоджуюся з розсилкою та приймаю
+            <a href="" class="form-modal__link">Умови договору</a></label
+          >
+          <button type="submit" class="form-modal__submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
