@@ -435,6 +435,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer__subscription subscription-footer">
+          <p class="subscription-footer__title">Підпишіться на розсилку</p>
+          <form class="subscription-footer__form">
+            <div class="subscription-footer__wrap">
+              <input
+                type="email"
+                name="subscription-mail"
+                id="subscription-mail"
+                class="subscription-footer__input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="subscription-footer__btn">
+                Підписатися
+                <svg class="subscription-footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -447,36 +467,62 @@
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal__form form-modal">
           <label for="form-modal__name" class="form-modal__lable">Ім'я</label>
-          <input
-            type="text"
-            name="form-modal__name"
-            id="form-modal__name"
-            class="form-modal__input"
-          />
+          <div class="form-modal__input-wrap">
+            <input
+              type="text"
+              name="form-modal__name"
+              id="form-modal__name"
+              class="form-modal__input"
+            />
+            <svg class="form-modal__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
           <label for="form-modal__phone" class="form-modal__lable">Телефон</label>
-          <input
-            type="tel"
-            name="form-modal__phone"
-            id="form-modal__phone"
-            class="form-modal__input"
-          />
+          <div class="form-modal__input-wrap">
+            <input
+              type="tel"
+              name="form-modal__phone"
+              id="form-modal__phone"
+              class="form-modal__input"
+            />
+            <svg class="form-modal__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
           <label for="form-modal__mail" class="form-modal__lable">Пошта</label>
-          <input
-            type="email"
-            name="form-modal__mail"
-            id="form-modal__mail"
-            class="form-modal__input"
-          />
-          <label for="form-modal__comment" class="form-modal__lable">Пошта</label>
+          <div class="form-modal__input-wrap">
+            <input
+              type="email"
+              name="form-modal__mail"
+              id="form-modal__mail"
+              class="form-modal__input"
+            />
+            <svg class="form-modal__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label for="form-modal__comment" class="form-modal__lable">Коментар</label>
           <textarea
             name="form-modal__comment"
             id="form-modal__comment"
             class="form-modal__comment form-modal__input"
             placeholder="Введіть текст"
           ></textarea>
-          <input type="checkbox" name="form-modal__check" id="form-modal__check" />
-          <label for="form-modal__check" class="form-modal__check-input"
-            >Погоджуюся з розсилкою та приймаю
+          <input
+            type="checkbox"
+            name="form-modal__check"
+            id="form-modal__check"
+            class="form-modal__check-input visually-hidden"
+          />
+
+          <label for="form-modal__check" class="form-modal__check-label">
+            <span>
+              <svg class="form-modal__check-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю
             <a href="" class="form-modal__link">Умови договору</a></label
           >
           <button type="submit" class="form-modal__submit">Відправити</button>
